@@ -9,7 +9,7 @@ int main() {
         int n,first, last;
         cin>>n;
         last = n%10;
-        while(n>10){
+        while(n>=10){
             n=n/10;
         }
         first=n;
