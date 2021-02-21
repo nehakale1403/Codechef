@@ -6,13 +6,15 @@ int main() {
 	cin>>t;
 	
 	while(t--){
-	    int n;
+	    int n, remainder, reversedNumber=0;
 	    cin>>n;
-	    while(n>0){
-	        cout<<n%10;
-	        n=n/10;
-	    }
-	    cout<<endl;
+	    while(n != 0) {
+            remainder = n%10;
+            reversedNumber = reversedNumber*10 + remainder;
+            n /= 10;
+        }
+
+        cout<< reversedNumber<<endl;
 	}
 	return 0;
 }
